@@ -7,3 +7,15 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = http://github.com/mileszs/ack.vim.git
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = http://github.com/chrismetcalf/vim-yankring.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = http://github.com/tpope/vim-repeat.git
+[submodule "bundle/rainbow-parenthesis"]
+	path = bundle/rainbow-parenthesis
+	url = http://github.com/hrp/rainbow-parenthesis.git
