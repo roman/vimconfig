@@ -44,4 +44,8 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSplitBelow=1
 let g:bufExplorerSortBye='mru'
 
+" ==
+" == Rainbow Parenthesis Settings
+" nmap <silent> <C-e> :RainbowParenthesesToggle<CR>
+
 
