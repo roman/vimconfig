@@ -1,0 +1,9 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "bundle/hexHighlight"]
+	path = bundle/hexHighlight
+	url = http://github.com/yurifury/hexHighlight.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = http://github.com/mileszs/ack.vim.git

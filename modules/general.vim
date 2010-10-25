@@ -1,8 +1,6 @@
 " == General Settings
 if has("gui_running")
-  colorscheme molokai
-else
-  set background=dark
+  colorscheme sunburst
 endif
 
 " If in mac, use Monaco and put size 14 to the font
