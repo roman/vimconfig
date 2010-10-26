@@ -39,7 +39,7 @@ let g:hs_highlight_more_types = 1
 
 " ==
 " == BuffExplorer Settings
-nmap <C-b> :call BufExplorerHorizontalSplit()<CR>
+nmap <silent> <C-b> :BufExplorer<CR>
 let g:bufExplorerFindActive=1
 let g:bufExplorerSplitBelow=1
 let g:bufExplorerSortBye='mru'
