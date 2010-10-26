@@ -19,3 +19,6 @@
 [submodule "bundle/rainbow"]
 	path = bundle/rainbow
 	url = http://github.com/HelgeG/rainbow.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = http://github.com/tpope/vim-rails.git
