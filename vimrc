@@ -18,9 +18,10 @@ source ~/.vim/modules/tabs.vim
 
 " ==
 " == NERDTree Config
-nmap <LEADER>p :NERDTreeToggle<CR>
+nmap <silent> <LEADER>p :NERDTreeToggle<CR>
+" let NERDTreeStatusline=-1
 let NERDTreeIgnore=[
-      \ '\.vim$', '\~$', '\.swp$', 
+      \ '\~$', '\.swp$', 
       \ '\.hi$',
       \ '\.pyc',
       \ '\.o$', '\.out$',
@@ -28,7 +29,6 @@ let NERDTreeIgnore=[
       \ '\.nav$', '\.snm$', '\.toc$', '\.vrb$' 
       \ ]
 let NERDTreeShowHidden=0
-" let NERDTreeStatusline=-1
 
 " ==
 " == Haskell Settings
@@ -45,7 +45,12 @@ let g:bufExplorerSplitBelow=1
 let g:bufExplorerSortBye='mru'
 
 " ==
+" == Ack Settings
+nmap <silent> <LEADER>a :Ack<CR>
+
+" ==
 " == Rainbow Parenthesis Settings
-" nmap <silent> <C-e> :RainbowParenthesesToggle<CR>
+nmap <silent> <LEADER>r :RainbowParenthesesToggle<CR>
+
 
 

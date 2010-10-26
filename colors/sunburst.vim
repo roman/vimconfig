@@ -45,6 +45,8 @@ hi Title      guifg=#FFFFFF guibg=Black
 hi Todo       guifg=#FFFFFF guibg=Black gui=underline
 hi Structure  guifg=#CE864B guibg=Black
 hi Delimiter  guifg=#FFFFFF guibg=Black
+hi NonText    guifg=#AEAEAE guibg=Black gui=italic ctermfg=246
+hi SpecialKey guifg=#AEAEAE guibg=Black gui=italic ctermfg=246
 
 " NERDTree 
 hi link treeClosable Special
@@ -61,6 +63,7 @@ hi link texInputFile Identifier
 hi link texSpecialChar Identifier
 
 " Haskell 
+hi ConId guifg=#3387CC guibg=Black gui=NONE
 hi hsOperator guifg=#E28964 guibg=Black
 hi hsStructure guifg=#E28964 guibg=Black gui=bold
 hi hsTypeDef guifg=#E28964 guibg=Black gui=bold

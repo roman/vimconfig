@@ -16,3 +16,6 @@
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = http://github.com/tpope/vim-repeat.git
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = http://github.com/HelgeG/rainbow.git

@@ -86,4 +86,11 @@ au FocusLost * :wa
 " Make an easier way to go to command mode
 inoremap jj <ESC>
 
+" I want to have a similar keystroke like D but for yanking
+nnoremap Y y$
+
+" The <LEADER> keyword, is synonym of ,
+let mapleader = ','
+
+
 
