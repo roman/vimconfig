@@ -18,7 +18,7 @@ source ~/.vim/modules/tabs.vim
 
 " ==
 " == NERDTree Config
-nmap <silent> <LEADER>p :NERDTreeToggle<CR>
+nmap <silent> \p :NERDTreeToggle<CR>
 " let NERDTreeStatusline=-1
 let NERDTreeIgnore=[
       \ '\~$', '\.swp$', 
