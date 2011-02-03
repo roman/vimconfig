@@ -65,6 +65,9 @@ set formatoptions=qrnl
 " We want elements to be foldable by their syntax
 " this way is more likely to work out of the box
 set foldmethod=syntax
+" We don't want all folds to be closed all the start
+" let's set a minimum of 2 level opens
+set foldlevel=3
 
 " ==
 " == Helping The old vices & annoying mistakes
