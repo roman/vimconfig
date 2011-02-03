@@ -5,8 +5,9 @@ endif
 
 " If in mac, use Monaco and put size 14 to the font
 if has("gui_macvim")
-  set guifont=Monaco:h14
+  set guifont=Monaco:h12
 endif
+
 " We don't want to loose features because of compatibility
 set nocompatible
 " We want any kind of characters on the files _always_
