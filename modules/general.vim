@@ -35,6 +35,8 @@ set ttyfast
 set ruler
 " TODO: Find out what is this all about
 set backspace=indent,eol,start
+" I want to have syntax by default
+syntax on
 
 " We want to see the relative numbers from the current line
 " NOTE: For some reason this option doesn't work on linux
