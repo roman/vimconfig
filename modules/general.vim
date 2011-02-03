@@ -61,6 +61,10 @@ set formatoptions=qrnl
 " rules
 "set colorcolumn=85
 
+" We want elements to be foldable by their syntax
+" this way is more likely to work out of the box
+set foldmethod=syntax
+
 " ==
 " == Helping The old vices & annoying mistakes
 " We don't want anything to do with the mundane way
@@ -89,10 +93,9 @@ au FocusLost * :wa
 inoremap jj <ESC>
 
 " I want to have a similar keystroke like D but for yanking
-nnoremap Y y$
+map Y y$
 
 " The <LEADER> keyword, is synonym of ,
 let mapleader = ','
-
 
 
