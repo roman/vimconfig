@@ -33,7 +33,7 @@ function! HighlightMixedIndenting()
     let spaces = search('^ ', 'nw') != 0
     if tabs && spaces
       let b:statusline_tab_warning = '[mixed-indenting]'
-    elseif (spaces && !&et) || (tabs && !et)
+    elseif (spaces && !&et) || (tabs && !&et)
       let b:statusline_tab_warning = '[&et]'
     else
       let b:statusline_tab_warning = ''
