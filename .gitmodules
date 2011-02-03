@@ -28,3 +28,6 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
+[submodule "bundle/ghc_complete"]
+	path = bundle/ghc_complete
+	url = https://github.com/ujihisa/ghc_complete.git

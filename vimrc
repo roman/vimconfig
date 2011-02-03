@@ -44,6 +44,15 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSplitBelow=1
 let g:bufExplorerSortBye='mru'
 
+" == 
+" == Yankring Settings
+let g:yankring_history_file='.vim_yankring_history'
+
+" ==
+" == Neocomplcache
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_disable_auto_complete = 1
+
 " ==
 " == Ack Settings
 nmap <silent> <LEADER>a :Ack<CR>
@@ -51,6 +60,4 @@ nmap <silent> <LEADER>a :Ack<CR>
 " ==
 " == Rainbow Parenthesis Settings
 nmap <silent> <LEADER>r :RainbowParenthesesToggle<CR>
-
-
 
