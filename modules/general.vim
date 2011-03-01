@@ -34,8 +34,10 @@ set visualbell
 set ttyfast
 " We want to see in which line,column we are standing on
 set ruler
-" TODO: Find out what is this all about
+" Allow backspace over autoindent, linebreaks and over the start of insert
 set backspace=indent,eol,start
+
+
 " I want to have syntax by default
 syntax on
 
@@ -96,10 +98,15 @@ au FocusLost * :wa
 " Make an easier way to go to command mode
 inoremap jj <ESC>
 
-" I want to have a similar keystroke like D but for yanking
-map Y y$
+" We want to have a similar keystroke like D but for yanking
+nmap Y y$
 
 " The <LEADER> keyword, is synonym of ,
-let mapleader = ','
+let mapleader=','
 
+" Avoid crazy indentation when pasting on terminal
+set pastetoggle=<F2>
 
+" Highlight long lines in Haskell
+" au BufNewFile,BufRead *.hs,*.lhs 
+match ErrorMsg '\%>80v.+'

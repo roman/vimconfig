@@ -20,6 +20,7 @@ hi Cursor      guibg=#DDDDDD ctermbg=240 ctermbg=240 gui=NONE
 hi Search      guibg=#16181A guifg=NONE
 hi MatchParen  guibg=#16181A guifg=#CE864B gui=NONE
 hi Folded      guibg=#16181A guifg=NONE
+hi ErrorMsg    guibg=#FF0000 guifg=white
 
 " General
 hi Normal      guifg=White   guibg=Black ctermfg=255 ctermbg=black

@@ -15,11 +15,12 @@ source ~/.vim/modules/search.vim
 source ~/.vim/modules/window.vim
 " == Tabs Management module
 source ~/.vim/modules/tabs.vim
+" == Tabular module
+source ~/.vim/modules/tabular.vim
 
 " ==
 " == NERDTree Config
 nmap <silent> \p :NERDTreeToggle<CR>
-" let NERDTreeStatusline=-1
 let NERDTreeIgnore=[
       \ '\~$', '\.swp$', 
       \ '\.hi$',
@@ -28,7 +29,7 @@ let NERDTreeIgnore=[
       \ '\.class$',
       \ '\.nav$', '\.snm$', '\.toc$', '\.vrb$' 
       \ ]
-let NERDTreeShowHidden=0
+let NERDTreeShowHidden = 0
 
 " ==
 " == Haskell Settings
@@ -60,4 +61,5 @@ nmap <silent> <LEADER>a :Ack<CR>
 " ==
 " == Rainbow Parenthesis Settings
 nmap <silent> <LEADER>r :RainbowParenthesesToggle<CR>
+
 
