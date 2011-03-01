@@ -40,3 +40,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/extradite"]
+	path = bundle/extradite
+	url = https://github.com/int3/vim-extradite.git
