@@ -103,4 +103,13 @@ hi hamlClassChar guifg=#DAD085 guibg=Black gui=NONE
 hi hamlClass guifg=#DAD085 guibg=Black gui=NONE
 hi hamlRubyOutputChar guifg=White guibg=Black gui=NONE
 
+" VimShell
+hi VimShellExe guifg=#FFFFFF guibg=Black gui=NONE
+hi VimShellPrompt guifg=#99CF50 guibg=Black gui=NONE
+hi VimShellUserPrompt guifg=#DAD085 guibg=Black gui=NONE
+hi VimShellDirectory guifg=#89BDFF guibg=Black gui=NONE
+hi VimShellDotFiles guifg=#89BDFF guibg=Black gui=NONE
+hi VimShellLink guifg=#AB2A1D  guibg=Black gui=NONE
+hi VimShellError guifg=#AB2A1D guibg=Black gui=NONE
+
 
