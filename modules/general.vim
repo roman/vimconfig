@@ -69,7 +69,7 @@ set formatoptions=qrnl
 set foldmethod=syntax
 " We don't want all folds to be closed all the start
 " let's set a minimum of 2 level opens
-set foldlevel=3
+set foldlevel=19
 
 " ==
 " == Helping The old vices & annoying mistakes
