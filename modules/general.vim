@@ -105,7 +105,7 @@ nmap Y y$
 let mapleader=','
 
 " Avoid crazy indentation when pasting on terminal
-set pastetoggle=<F2>
+set pastetoggle=<F3>
 
 " Highlight long lines in Haskell
 " au BufNewFile,BufRead *.hs,*.lhs 
