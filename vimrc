@@ -17,6 +17,8 @@ source ~/.vim/modules/window.vim
 source ~/.vim/modules/tabs.vim
 " == Tabular module
 source ~/.vim/modules/tabular.vim
+" == Vimshell
+source ~/.vim/modules/vimshell.vim
 
 " ==
 " == NERDTree Config
