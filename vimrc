@@ -17,8 +17,10 @@ source ~/.vim/modules/window.vim
 source ~/.vim/modules/tabs.vim
 " == Tabular module
 source ~/.vim/modules/tabular.vim
-" == Vimshell
+" == Vimshell module
 source ~/.vim/modules/vimshell.vim
+" == Neocomplcache module
+source ~/.vim/modules/neocomplcache.vim
 
 " ==
 " == NERDTree Config
@@ -32,6 +34,8 @@ let NERDTreeIgnore=[
       \ '\.nav$', '\.snm$', '\.toc$', '\.vrb$' 
       \ ]
 let NERDTreeShowHidden = 0
+let NERDTreeHighlightCursorline = 1
+"let NERDTreeStatusline = 1
 
 " ==
 " == Haskell Settings
@@ -51,10 +55,6 @@ let g:bufExplorerSortBye='mru'
 " == Yankring Settings
 let g:yankring_history_file='.vim_yankring_history'
 
-" ==
-" == Neocomplcache
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_disable_auto_complete = 1
 
 " ==
 " == Ack Settings
