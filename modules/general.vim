@@ -1,6 +1,8 @@
 " == General Settings
 if has("gui_running")
   colorscheme sunburst
+else
+  colorscheme wombat256
 endif
 
 " If in mac, use Monaco and put size 14 to the font
