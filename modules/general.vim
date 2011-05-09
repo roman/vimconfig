@@ -1,4 +1,9 @@
 " == General Settings
+
+" I want to have syntax colors by default
+syntax enable
+set t_Co=256
+
 if has("gui_running")
   colorscheme sunburst
 else
@@ -40,8 +45,6 @@ set ruler
 set backspace=indent,eol,start
 
 
-" I want to have syntax by default
-syntax on
 
 " We want to see the relative numbers from the current line
 " NOTE: For some reason this option doesn't work on linux
