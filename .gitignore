@@ -1,2 +1,3 @@
 *.swp
 .netrwhist
+modules/haskellmode/haskellmode.config

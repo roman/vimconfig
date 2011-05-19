@@ -21,6 +21,8 @@ source ~/.vim/modules/tabular.vim
 source ~/.vim/modules/vimshell.vim
 " == Neocomplcache module
 source ~/.vim/modules/neocomplcache.vim
+" == Haskellmode module
+source ~/.vim/modules/haskellmode/general.vim
 
 " ==
 " == NERDTree Config
@@ -36,13 +38,6 @@ let NERDTreeIgnore=[
 let NERDTreeShowHidden = 0
 let NERDTreeHighlightCursorline = 1
 "let NERDTreeStatusline = 1
-
-" ==
-" == Haskell Settings
-" Highlight all the different types please
-let g:hs_highlight_booleans = 1
-let g:hs_highlight_types = 1
-let g:hs_highlight_more_types = 1
 
 " ==
 " == BuffExplorer Settings
