@@ -7,6 +7,7 @@ let g:hs_highlight_more_types = 1
 au BufEnter *.hs compiler ghc
 
 let g:ghc="/usr/bin/ghc"
+let g:haskellmode_config_file="/modules/haskellmode/main.config"
 let g:haddock_browser="open"
 let g:haddock_indexfiledir="~/.vim/modules/haskellmode/"
 
