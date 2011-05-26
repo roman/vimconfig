@@ -52,3 +52,6 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/ujihisa/unite.vim.git
+[submodule "bundle/neocomplcache-ghc"]
+	path = bundle/neocomplcache-ghc
+	url = https://github.com/ujihisa/neco-ghc.git
