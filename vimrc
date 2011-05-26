@@ -21,8 +21,8 @@ source ~/.vim/modules/tabular.vim
 source ~/.vim/modules/vimshell.vim
 " == Neocomplcache module
 source ~/.vim/modules/neocomplcache.vim
-" == Haskellmode module
-source ~/.vim/modules/haskellmode/general.vim
+" == Haskell module
+source ~/.vim/modules/haskell.vim
 
 " ==
 " == NERDTree Config

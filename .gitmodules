@@ -49,9 +49,6 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc
-[submodule "bundle/haskellmode"]
-	path = bundle/haskellmode
-	url = https://github.com/lukerandall/haskellmode-vim.git
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/ujihisa/unite.vim.git
