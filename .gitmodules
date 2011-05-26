@@ -52,6 +52,3 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/ujihisa/unite.vim.git
-[submodule "bundle/neco-ghc"]
-	path = bundle/neco-ghc
-	url = https://github.com/ujihisa/neco-ghc.git
