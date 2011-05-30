@@ -4,7 +4,6 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
 set modelines=0
-set background=dark
 
 " == General Settings Module
 source ~/.vim/modules/general.vim

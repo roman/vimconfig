@@ -2,6 +2,7 @@
 
 " I want to have syntax colors by default
 syntax enable
+set background=dark
 set t_Co=256
 
 if has("gui_running")

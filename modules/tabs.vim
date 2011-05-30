@@ -5,23 +5,23 @@ set ts=2 sw=2 sts=2 expandtab
 
 " Methods that will set the same space for all different
 " space attributes..
-command! -nargs=* Stab call Stab()
+command! -nargs=* Stab call <SID>Stab()
 
 " This is the function you need to call on the vim env
 " :Stab
-function! Stab()
+function! s:Stab()
   let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth =')
   if l:tabstop > 0
     let &l:sts = l:tabstop
     let &l:ts  = l:tabstop
     let &l:sw  = l:tabstop
   endif
-  call SummarizeTabs()
+  call s:SummarizeTabs()
 endfunction
 
 " Private method that gets called to display
 " the final values
-function! SummarizeTabs()
+function! s:SummarizeTabs()
   try
     echohl ModeMsg
     echon 'tabstop='.&l:ts
@@ -60,11 +60,8 @@ endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 " === Indentation using TextMate like commands
-nmap <D-[> <<
-nmap <D-]> >>
-" gv at this point re-selects the text that was selected before
-vmap <D-[> <gv
-vmap <D-]> >gv
+vmap <C-[> <gv
+vmap <C-]> >gv
 
 " ==
 " == Invisible keys customization
