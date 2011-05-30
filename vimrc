@@ -23,40 +23,18 @@ source ~/.vim/modules/vimshell.vim
 source ~/.vim/modules/neocomplcache.vim
 " == Haskell module
 source ~/.vim/modules/haskell.vim
+" == Unite module
+source ~/.vim/modules/unite.vim
+" == Rainbow Parentheses module
+source ~/.vim/modules/rainbowparentheses.vim
+" == Nerd Tree module
+source ~/.vim/modules/nerdtree.vim
+" == Buff Explorer module
+source ~/.vim/modules/buffexplorer.vim
+" == Ack search module
+source ~/.vim/modules/ack.vim
+" == Yankring module
+source ~/.vim/modules/yankring.vim
 
-" ==
-" == NERDTree Config
-nmap <silent> \p :NERDTreeToggle<CR>
-let NERDTreeIgnore=[
-      \ '\~$', '\.swp$', 
-      \ '\.hi$',
-      \ '\.pyc',
-      \ '\.o$', '\.out$',
-      \ '\.class$',
-      \ '\.nav$', '\.snm$', '\.toc$', '\.vrb$' 
-      \ ]
-let NERDTreeShowHidden = 0
-let NERDTreeHighlightCursorline = 1
-"let NERDTreeStatusline = 1
-
-" ==
-" == BuffExplorer Settings
-nmap <silent> <C-b> :BufExplorer<CR>
-let g:bufExplorerFindActive=1
-let g:bufExplorerSplitBelow=1
-let g:bufExplorerSortBye='mru'
-
-" == 
-" == Yankring Settings
-let g:yankring_history_file='.vim_yankring_history'
-
-
-" ==
-" == Ack Settings
-nmap <silent> <LEADER>a :Ack<CR>
-
-" ==
-" == Rainbow Parenthesis Settings
-nmap <silent> <LEADER>r :RainbowParenthesesToggle<CR>
 
 
