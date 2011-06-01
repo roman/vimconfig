@@ -13,4 +13,5 @@ let g:neocomplcache_temporary_dir = $HOME . "/.vim/tmp/neocon"
 if !exists("g:neocomplcache_plugin_completion_length")
   let g:neocomplcache_plugin_completion_length = {} 
 endif
-let g:neocomplcache_plugin_completion_length.buffer_complete = 4
+let g:neocomplcache_plugin_completion_length.buffer_complete = 9
+
