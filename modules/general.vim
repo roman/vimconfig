@@ -6,14 +6,14 @@ set background=dark
 set t_Co=256
 
 if has("gui_running")
-  colorscheme sunburst
+  colorscheme wombat
 else
   colorscheme wombat256
 endif
 
 " If in mac, use Monaco and put size 14 to the font
 if has("gui_macvim")
-  set guifont=Monaco:h12
+  set guifont=Monaco:h14
 endif
 
 " We don't want to loose features because of compatibility
@@ -113,6 +113,5 @@ let mapleader=','
 " Avoid crazy indentation when pasting on terminal
 set pastetoggle=<F3>
 
-" Highlight long lines in Haskell
-" au BufNewFile,BufRead *.hs,*.lhs 
-match ErrorMsg '\%>80v.+'
+" Highlight long lines 
+match ErrorMsg '\%>79.+'
