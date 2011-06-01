@@ -35,6 +35,8 @@ source ~/.vim/modules/buffexplorer.vim
 source ~/.vim/modules/ack.vim
 " == Yankring module
 source ~/.vim/modules/yankring.vim
+" == QuickRun module
+source ~/.vim/modules/quickrun.vim
 
 
 
