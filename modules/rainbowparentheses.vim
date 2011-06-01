@@ -1,2 +1,2 @@
-nnoremap <silent> <LEADER>r :RainbowParenthesesToggle<CR>
+nnoremap <silent> \r :RainbowParenthesesToggle<CR>
 
