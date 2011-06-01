@@ -55,3 +55,6 @@
 [submodule "bundle/neocomplcache-ghc"]
 	path = bundle/neocomplcache-ghc
 	url = https://github.com/ujihisa/neco-ghc.git
+[submodule "bundle/quickrun"]
+	path = bundle/quickrun
+	url = https://github.com/thinca/vim-quickrun.git
