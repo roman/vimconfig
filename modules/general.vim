@@ -114,4 +114,4 @@ let mapleader=','
 set pastetoggle=<F3>
 
 " Highlight long lines 
-match ErrorMsg '\%>79.+'
+match ErrorMsg '\%>v80.*'
