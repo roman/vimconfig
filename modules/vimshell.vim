@@ -1,5 +1,4 @@
-nmap <Space>V <Plug>(vimshell_split_switch)
-nmap <Space>V <Plug>(vimshell_switch)
+nmap <SPACE>v <Plug>(vimshell_split_create) 
 
 " TODO: 
 " * Ask Uji how to improve this code to use
