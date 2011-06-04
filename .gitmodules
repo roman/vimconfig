@@ -64,3 +64,9 @@
 [submodule "bundle/repl"]
 	path = bundle/repl
 	url = https://roman@github.com/roman/repl.vim.git
+[submodule "bundle/vim-ref"]
+	path = bundle/vim-ref
+	url = https://github.com/thinca/vim-ref.git
+[submodule "bundle/ref-hoogle"]
+	path = bundle/ref-hoogle
+	url = https://github.com/ujihisa/ref-hoogle.git
