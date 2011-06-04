@@ -61,3 +61,6 @@
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = https://github.com/bdd/vim-scala.git
+[submodule "bundle/repl"]
+	path = bundle/repl
+	url = https://roman@github.com/roman/repl.vim.git
