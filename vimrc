@@ -29,8 +29,6 @@ source ~/.vim/modules/unite.vim
 source ~/.vim/modules/rainbowparentheses.vim
 " == Nerd Tree module
 source ~/.vim/modules/nerdtree.vim
-" == Buff Explorer module
-source ~/.vim/modules/buffexplorer.vim
 " == Ack search module
 source ~/.vim/modules/ack.vim
 " == Yankring module
