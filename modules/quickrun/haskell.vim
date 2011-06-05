@@ -13,6 +13,6 @@ if s:currentDirectory =~# "/test$"
       \ && s:cabalFilePresent 
       \ && s:runExecPresent
   " Run the haskell/test mode, and put the cursor into the buffer
-  nmap <SPACE>m :QuickRun haskell/test -mode n -into 1<CR>
+  nmap <LEADER>m :QuickRun haskell/test -mode n -into 1<CR>
 endif
 

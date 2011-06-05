@@ -114,9 +114,9 @@ let mapleader=','
 set pastetoggle=<F3>
 
 " Handy Shortcuts
-nmap <SPACE>q :<C-u>quit<CR>
-nmap <SPACE>w :<C-u>w<CR>
-nmap <SPACE>n :<C-u>new<CR>
+nmap <LEADER>q :<C-u>quit<CR>
+nmap <LEADER>w :<C-u>w<CR>
+nmap <LEADER>n :<C-u>new<CR>
 
 " Highlight long lines 
 " match ErrorMsg '\%>v80.*'
