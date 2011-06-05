@@ -35,6 +35,8 @@ source ~/.vim/modules/ack.vim
 source ~/.vim/modules/yankring.vim
 " == QuickRun module
 source ~/.vim/modules/quickrun.vim
+" == QuickFix module
+source ~/.vim/modules/quickfix.vim
 
 
 
