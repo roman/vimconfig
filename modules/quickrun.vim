@@ -1,3 +1,6 @@
 let g:quickrun_config = {}
+let g:quickrun_no_default_key_mappings = 1
 
-au BufNewFile,BufRead *.hs,*.lhs source ~/.vim/modules/quickrun/haskell.vim
+nmap <SPACE>r <Plug>(quickrun)
+
+au FileType haskell source ~/.vim/modules/quickrun/haskell.vim

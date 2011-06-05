@@ -1,5 +1,5 @@
 let g:quickrun_config['haskell/test'] = {
-      \ 'exec': ['cabal build', './runTestsAndCoverage.sh --plain']
+      \ 'exec': ['./runTestsAndCoverage.sh --plain']
       \ }
 
 " If the current directory is a test folder
@@ -13,7 +13,6 @@ if s:currentDirectory =~# "/test$"
       \ && s:cabalFilePresent 
       \ && s:runExecPresent
   " Run the haskell/test mode, and put the cursor into the buffer
-  nmap <LEADER>m :QuickRun haskell/test -mode n -into 1<CR>
-  vmap <LEADER>m :QuickRun haskell/test -mode v -into 1<CR>
+  nmap <SPACE>m :QuickRun haskell/test -mode n -into 1<CR>
 endif
 
