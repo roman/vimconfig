@@ -40,9 +40,6 @@
 [submodule "bundle/extradite"]
 	path = bundle/extradite
 	url = https://github.com/int3/vim-extradite.git
-[submodule "bundle/hoogle"]
-	path = bundle/hoogle
-	url = https://github.com/Twinside/vim-hoogle
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = https://github.com/Shougo/vimshell.git
