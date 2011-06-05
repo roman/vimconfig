@@ -24,46 +24,46 @@
 	url = http://github.com/tpope/vim-rails.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+	url = http://github.com/tpope/vim-fugitive.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.git
+	url = http://github.com/Shougo/neocomplcache.git
 [submodule "bundle/ruby"]
 	path = bundle/ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
+	url = http://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = https://github.com/tsaleh/vim-matchit.git
+	url = http://github.com/tsaleh/vim-matchit.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
+	url = http://github.com/godlygeek/tabular.git
 [submodule "bundle/extradite"]
 	path = bundle/extradite
-	url = https://github.com/int3/vim-extradite.git
+	url = http://github.com/int3/vim-extradite.git
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
-	url = https://github.com/Shougo/vimshell.git
+	url = http://github.com/Shougo/vimshell.git
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
-	url = https://github.com/Shougo/vimproc
+	url = http://github.com/Shougo/vimproc
 [submodule "bundle/unite"]
 	path = bundle/unite
-	url = https://github.com/ujihisa/unite.vim.git
+	url = http://github.com/ujihisa/unite.vim.git
 [submodule "bundle/neocomplcache-ghc"]
 	path = bundle/neocomplcache-ghc
-	url = https://github.com/ujihisa/neco-ghc.git
+	url = http://github.com/ujihisa/neco-ghc.git
 [submodule "bundle/quickrun"]
 	path = bundle/quickrun
-	url = https://github.com/thinca/vim-quickrun.git
+	url = http://github.com/thinca/vim-quickrun.git
 [submodule "bundle/scala"]
 	path = bundle/scala
-	url = https://github.com/bdd/vim-scala.git
+	url = http://github.com/bdd/vim-scala.git
 [submodule "bundle/repl"]
 	path = bundle/repl
-	url = https://roman@github.com/roman/repl.vim.git
+	url = http://github.com/ujihisa/repl.vim.git
 [submodule "bundle/vim-ref"]
 	path = bundle/vim-ref
-	url = https://github.com/thinca/vim-ref.git
+	url = http://github.com/thinca/vim-ref.git
 [submodule "bundle/ref-hoogle"]
 	path = bundle/ref-hoogle
-	url = https://github.com/ujihisa/ref-hoogle.git
+	url = http://github.com/ujihisa/ref-hoogle.git
