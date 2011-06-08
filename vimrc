@@ -39,6 +39,8 @@ source ~/.vim/modules/yankring.vim
 source ~/.vim/modules/quickrun.vim
 " == QuickFix module
 source ~/.vim/modules/quickfix.vim
+" == TPP module
+source ~/.vim/modules/tpp.vim
 
 
 
