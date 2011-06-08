@@ -67,3 +67,6 @@
 [submodule "bundle/ref-hoogle"]
 	path = bundle/ref-hoogle
 	url = http://github.com/ujihisa/ref-hoogle.git
+[submodule "bundle/neco-look"]
+	path = bundle/neco-look
+	url = https://github.com/ujihisa/neco-look.git
