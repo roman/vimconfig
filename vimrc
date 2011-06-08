@@ -23,6 +23,8 @@ source ~/.vim/modules/vimshell.vim
 source ~/.vim/modules/neocomplcache.vim
 " == Haskell module
 source ~/.vim/modules/haskell.vim
+" == Ref-Hoogle module
+source ~/.vim/modules/hoogle.vim
 " == Unite module
 source ~/.vim/modules/unite.vim
 " == Rainbow Parentheses module
