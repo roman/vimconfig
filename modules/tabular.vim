@@ -15,5 +15,5 @@ function! s:alignPipes()
 endfunction
 
 " Adding special tabulizations for Haskell source code
-au BufNewFile,BufRead *.hs,*.lhs source ~/.vim/modules/tabular/haskell.vim
+au FileType haskell source ~/.vim/modules/tabular/haskell.vim
 
