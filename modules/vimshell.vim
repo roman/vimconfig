@@ -1,9 +1,5 @@
-nmap <SPACE>v <Plug>(vimshell_split_create) 
+map <LEADER>s :VimShell<CR>
 
-" TODO: 
-" * Ask Uji how to improve this code to use
-"   an s: as a prefix of the function
-" * Remove the [%] from the g:vimshell_user_prompt
 function! Roman_vimshell_user_prompt()
   let s:user   = $USER
   let s:path   = fnamemodify(getcwd(), ":~")
