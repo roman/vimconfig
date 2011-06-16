@@ -1,6 +1,6 @@
 nmap <LEADER>b :<C-u>make<CR>
 
-au BufReadPost quickfix nmap <silent> q :cclose<CR>
+au FileType qf nnoremap <buffer> q :<C-u>cclose<CR>
 au QuickFixCmdPost make call OpenQuickFixBuffer()
 
 function! OpenQuickFixBuffer()
@@ -22,16 +22,20 @@ function! QuickFixHaskell()
     setl makeprg=cabal\ build
   else
     let l:currentFile = expand('%')
-    let l:outputDir = tempname()
-    " QUESTION: is this a good thing to do?
-    " create a directory each time you compile?
-    call mkdir(l:outputDir)
-    let l:command = 'setl makeprg=ghc\ --make\ %' . 
-                    \ '\ -outputdir\ ' . 
-                    \ l:outputDir
-                       
-                      
-    exec l:command
+    if !exists('b:qfOutputdir')
+      let b:qfOutputdir = tempname()
+      call mkdir(b:qfOutputdir)
+    endif
+    let &l:makeprg = 'ghc --make % -outputdir ' . b:qfOutputdir
   endif 
-  setl errorformat+=%A%f:%l:\ %m,%A%f:%l:,%C%\\s%m,%Z
+  "setl errorformat+=%A%f:%l:\ %m,%A%f:%l:,%C%\\s%m,%Z
+  "
+  setl errorformat=
+                   \%-Z\ %#,
+                   \%W%f:%l:%c:\ Warning:\ %m,
+                   \%E%f:%l:%c:\ %m,
+                   \%E%>%f:%l:%c:,
+                   \%+C\ \ %#%m,
+                   \%W%>%f:%l:%c:,
+                   \%+C\ \ %#%tarning:\ %m,
 endfunction
