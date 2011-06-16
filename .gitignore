@@ -2,3 +2,4 @@
 .netrwhist
 modules/haskellmode/main.config
 tmp/*
+doc/tags
