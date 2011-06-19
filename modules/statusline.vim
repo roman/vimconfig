@@ -118,6 +118,13 @@ set statusline+=\ %P
 " Always dipslay the status line
 set laststatus=2
 
+function! AppendToStatusLine(str) 
+  if !exists('b:currentStatusLine')
+    let b:currentStatusLine = &statusline
+  endif
+  let &l:statusline = substitute(b:currentStatusLine, '%y', '%y' . a:str, '')
+endfunction
+
 " Recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
