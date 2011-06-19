@@ -1,13 +1,32 @@
 nmap <LEADER>b :<C-u>make<CR>
 
-au FileType qf nnoremap <buffer> q :<C-u>cclose<CR>
+au FileType qf nnoremap <silent><buffer> q :<C-u>cclose<CR>
 au QuickFixCmdPost make call OpenQuickFixBuffer()
 
+" Depends on MarkLines in order to work
+" see: 
+"  * modules/marklines.vim
+"  * :help marklines
+function! HighlightQuickFixLines(qflist)
+  if exists('g:marklines_loaded') && !empty(a:qflist)
+    let l:curPos = getpos('.')
+    " We clear all the previous Higlights
+    %MarkLinesOff
+    " We save the cursor position
+    for qferror in a:qflist
+      exec qferror.lnum . 'MarkLinesOn'
+    endfor
+    " we keep the cursor in the same place
+    call setpos('.', l:curPos)
+  endif
+endfunction
+
 function! OpenQuickFixBuffer()
-  let qflist = getqflist()
-  if empty(qflist)
+  let l:qflist = getqflist()
+  if empty(l:qflist)
     cclose
   else
+    call HighlightQuickFixLines(l:qflist)
     copen
   endif
 endfunction
@@ -28,8 +47,7 @@ function! QuickFixHaskell()
     endif
     let &l:makeprg = 'ghc --make % -outputdir ' . b:qfOutputdir
   endif 
-  "setl errorformat+=%A%f:%l:\ %m,%A%f:%l:,%C%\\s%m,%Z
-  "
+
   setl errorformat=
                    \%-Z\ %#,
                    \%W%f:%l:%c:\ Warning:\ %m,
