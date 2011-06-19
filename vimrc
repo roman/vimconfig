@@ -42,12 +42,9 @@ source ~/.vim/modules/quickfix.vim
 " == TPP module
 source ~/.vim/modules/tpp.vim
 
-" If vim is starting without an input file, start
-" with VimShell
-function! InitVimCallback()
-  if empty(bufname('%'))
-    VimShell
-  endif
-endfunction
+" NOTE: LAST MODULE, PLEASE DON'T REMOVE
+" == Project Config module
+source ~/.vim/modules/project_config.vim
 
-autocmd VimEnter * call InitVimCallback()
+
+"autocmd VimEnter * call InitVimCallback()
