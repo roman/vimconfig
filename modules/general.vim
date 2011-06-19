@@ -117,8 +117,10 @@ set pastetoggle=<F3>
 nmap <LEADER>q :<C-u>quit<CR>
 nmap <LEADER>w :<C-u>w<CR>
 nmap <LEADER>n :<C-u>new<CR>
-map <unique> ;; q:
 
+" Moving the q: functionality to ;;
+nnoremap ;; q:
+nmap q: <nop>
 
 " Highlight long lines 
-" match ErrorMsg '\%>v80.*'
+match ErrorMsg '\%80v.\+'
