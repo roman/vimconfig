@@ -17,7 +17,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-nnoremap <LEADER><SPACE> :noh<CR>
+nnoremap <silent> <LEADER><SPACE> :noh<CR>
 nnoremap <TAB> %
 vnoremap <TAB> %
 
