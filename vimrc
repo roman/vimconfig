@@ -15,6 +15,8 @@ source ~/.vim/modules/search.vim
 source ~/.vim/modules/window.vim
 " == Tabs Management module
 source ~/.vim/modules/tabs.vim
+" == Mark Lines module
+source ~/.vim/modules/marklines.vim
 " == Tabular module
 source ~/.vim/modules/tabular.vim
 " == Vimshell module
