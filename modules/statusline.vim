@@ -122,7 +122,43 @@ function! AppendToStatusLine(str)
   if !exists('b:currentStatusLine')
     let b:currentStatusLine = &statusline
   endif
-  let &l:statusline = substitute(b:currentStatusLine, '%y', '%y' . a:str, '')
+  let l:isInThere = match(b:currentStatusLine, a:str)
+  if l:isInThere == -1 
+    let b:currentStatusLine = substitute(b:currentStatusLine, '%y', '%y' . a:str, '')
+    let &l:statusline = b:currentStatusLine
+  endif
+endfunction
+
+function! RemoveFromStatusLine(str)
+  if !exists('b:currentStatusLine')
+    let b:currentStatusLine = &statusline
+  endif
+  let l:isInThere = match(b:currentStatusLine, a:str)
+  if l:isInThere != -1
+    let b:currentStatusLine =  substitute(b:currentStatusLine, a:str, '', '')
+    let &l:statusline = b:currentStatusLine
+  endif
+endfunction
+
+function! RestoreStatusLine()
+  if !exists('b:currentStatusLine')
+    let b:currentStatusLine = &statusline
+  else
+    let &l:statusline = b:currentStatusLine
+  endif
+endfunction
+
+function! ReplaceInStatusLine(original, replacement)
+  if !exists('b:currentStatusLine')
+    let b:currentStatusLine = &statusline
+  endif
+  let l:isInThere = match(b:currentStatusLine, a:original)
+  if l:isInThere != -1
+    let b:currentStatusLine = substitute(b:currentStatusLine, a:original, a:replacement, '')
+    let &l:statusline = b:currentStatusLine
+  else
+    call AppendToStatusLine(a:replacement)
+  endif
 endfunction
 
 " Recalculate the trailing whitespace warning when idle, and after saving
