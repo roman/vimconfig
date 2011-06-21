@@ -27,7 +27,7 @@ function! OpenQuickFixBuffer()
     cclose
   else
     call HighlightQuickFixLines(l:qflist)
-    copen
+    call AppendToStatusLine('%#error#[Compile Error]%*')
   endif
 endfunction
 
