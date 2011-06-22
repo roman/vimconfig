@@ -23,11 +23,23 @@ endfunction
 
 function! OpenQuickFixBuffer()
   let l:qflist = getqflist()
-  if empty(l:qflist)
-    cclose
-  else
+  if !empty(l:qflist) 
+    call RemoveFromStatusLine('\[Syntax Ok\]')
+    call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
+    call AppendToStatusLine('%#error#\[Compile Error\]%\*')
     call HighlightQuickFixLines(l:qflist)
-    call AppendToStatusLine('%#error#[Compile Error]%*')
+
+  elseif v:shell_error > 0
+    call RemoveFromStatusLine('\[Syntax Ok\]')
+    call RemoveFromStatusLine('%#error#\[Compile Error\]%\*')
+    call AppendToStatusLine('%#error#\[Make failed\]%\*')
+
+  else
+    call RemoveFromStatusLine('%#error#\[Compile Error\]%\*')
+    call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
+    call AppendToStatusLine('\[Syntax Ok\]')
+    cclose
+
   endif
 endfunction
 
