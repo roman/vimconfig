@@ -10,8 +10,6 @@ au QuickFixCmdPost make call OpenQuickFixBuffer()
 function! HighlightQuickFixLines(qflist)
   if exists('g:marklines_loaded') && !empty(a:qflist)
     let l:curPos = getpos('.')
-    " We clear all the previous Higlights
-    %MarkLinesOff
     " We save the cursor position
     for qferror in a:qflist
       exec qferror.lnum . 'MarkLinesOn'
@@ -22,13 +20,14 @@ function! HighlightQuickFixLines(qflist)
 endfunction
 
 function! OpenQuickFixBuffer()
+  %MarkLinesOff
   let l:qflist = getqflist()
   if !empty(l:qflist) 
     call RemoveFromStatusLine('\[Syntax Ok\]')
     call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
     call AppendToStatusLine('%#error#\[Compile Error\]%\*')
     call HighlightQuickFixLines(l:qflist)
-
+    copen
   elseif v:shell_error > 0
     call RemoveFromStatusLine('\[Syntax Ok\]')
     call RemoveFromStatusLine('%#error#\[Compile Error\]%\*')
