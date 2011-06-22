@@ -48,5 +48,12 @@ source ~/.vim/modules/tpp.vim
 " == Project Config module
 source ~/.vim/modules/project_config.vim
 
+" If vim is starting without an input file, start
+" with VimShell
+function! InitVimCallback()
+  if empty(bufname('%'))
+    NERDTree 
+  endif
+endfunction
 
-"autocmd VimEnter * call InitVimCallback()
+autocmd VimEnter * call InitVimCallback()
