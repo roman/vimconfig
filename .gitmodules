@@ -73,3 +73,6 @@
 [submodule "bundle/marklines"]
 	path = bundle/marklines
 	url = https://github.com/vim-scripts/MarkLines
+[submodule "bundle/happy"]
+	path = bundle/happy
+	url = http://github.com/vim-scripts/happy.vim
