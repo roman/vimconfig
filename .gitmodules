@@ -76,3 +76,6 @@
 [submodule "bundle/happy"]
 	path = bundle/happy
 	url = http://github.com/vim-scripts/happy.vim
+[submodule "bundle/puppet"]
+	path = bundle/puppet
+	url = http://github.com/johnbintz/vim-puppet.git
