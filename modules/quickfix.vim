@@ -4,7 +4,7 @@ au FileType qf nnoremap <silent><buffer> q :<C-u>cclose<CR>
 au QuickFixCmdPost make call OpenQuickFixBuffer()
 
 " Depends on MarkLines in order to work
-" see: 
+" see:
 "  * modules/marklines.vim
 "  * :help marklines
 function! HighlightQuickFixLines(qflist)
@@ -22,7 +22,7 @@ endfunction
 function! OpenQuickFixBuffer()
   %MarkLinesOff
   let l:qflist = getqflist()
-  if !empty(l:qflist) 
+  if !empty(l:qflist)
     call RemoveFromStatusLine('\[Syntax Ok\]')
     call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
     call AppendToStatusLine('%#error#\[Compile Error\]%\*')
@@ -44,27 +44,5 @@ endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-au FileType haskell call QuickFixHaskell()
+au FileType haskell,cabal :source ~/.vim/modules/quickfix/haskell.vim 
 
-function! QuickFixHaskell()
-  let l:cabalFilePresent = filereadable(glob('*.cabal'))
-  if l:cabalFilePresent
-    setl makeprg=cabal\ build
-  else
-    let l:currentFile = expand('%')
-    if !exists('b:qfOutputdir')
-      let b:qfOutputdir = tempname()
-      call mkdir(b:qfOutputdir)
-    endif
-    let &l:makeprg = 'ghc --make % -outputdir ' . b:qfOutputdir
-  endif 
-
-  setl errorformat=
-                   \%-Z\ %#,
-                   \%W%f:%l:%c:\ Warning:\ %m,
-                   \%E%f:%l:%c:\ %m,
-                   \%E%>%f:%l:%c:,
-                   \%+C\ \ %#%m,
-                   \%W%>%f:%l:%c:,
-                   \%+C\ \ %#%tarning:\ %m,
-endfunction
