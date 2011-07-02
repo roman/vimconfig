@@ -1,14 +1,23 @@
-" When on a Haskell File, we want QuickFix to run 
-" cabal if possible
+" When on a Haskell File, we want QuickFix to run
+" cabal if possible, if a cabal file is not present
+" then we will run the file as the Main
 
-" We start fro the path of the file and up
+" We start from the path of the file
 let s:currentPath = expand('%:h')
-let s:cabalFilePresent = filereadable(glob(s:currentPath . '/*.cabal'))
+" If current path is not an absolute path
+" then make it one
+if match(s:currentPath, '^/') < 0
+  let s:currentPath = getcwd() . "/" . s:currentPath
+endif
 
-" If cabal file not found, go all the way up to the HOME 
-" until you find it
-while s:currentPath != $HOME && !s:cabalFilePresent
-  let s:currentPath = substitute(s:currentPath, '\(.\+\)/\(.\+\)$', '\1', '')
+" Initializing the variable that checks if a cabal file
+" is present on the current path
+let s:cabalFilePresent = filereadable(glob(s:currentPath . '/*.cabal')) 
+
+" Lookup cabal files in all subdirectories
+while !s:cabalFilePresent && !empty(s:currentPath)
+  " we go one level up
+  let s:currentPath = substitute(s:currentPath, '\(.*\)/\(.\+\)$', '\1', '')
   let s:cabalFilePresent = filereadable(glob(s:currentPath . '/*.cabal'))
 endwhile
 
@@ -17,7 +26,7 @@ if s:cabalFilePresent
   nnoremap <buffer> <LEADER>c :<C-u>! cabal configure<CR>
 
   " On this buffer only
-  " Change the current directory where the cabal file is 
+  " Change the current directory where the cabal file is
   exec "lcd " . s:currentPath
 
   setl makeprg=cabal\ build
