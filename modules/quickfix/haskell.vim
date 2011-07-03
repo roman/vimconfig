@@ -41,7 +41,9 @@ if b:cabalFilePresent
   " We create a shortcut to run 'cabal configure'
   nnoremap <buffer> <LEADER>c :<C-u>! cabal configure<CR>
 
-  setl makeprg=cabal\ build
+  " if the cabal file is a testsuite, run also the tests
+  let &l:makeprg = "cabal build"
+
 else
   " We compile the current file as the Main module
   let s:currentFile = expand('%')
@@ -57,10 +59,12 @@ setl errorformat=
                  \%-Z\ %#,
                  \%W%f:%s:%c:\ Warning:\ %m,
                  \%E%f:%s:%c:\ %m,
+                 \%E%f:%l:%c:,
                  \%E%>%f:%s:%c:,
                  \%+C\ \ %#%m,
                  \%W%>%f:%s:%c:,
-                 \cabal:\ %m,
                  \%+C\ \ %#%tarning:\ %m,
+                 \cabal:\ %m,
                  \%-G%.%#
+
 
