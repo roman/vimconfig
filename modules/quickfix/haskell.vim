@@ -2,35 +2,46 @@
 " cabal if possible, if a cabal file is not present
 " then we will run the file as the Main
 
-" We start from the path of the file
-let s:currentPath = expand('%:h')
-" If current path is not an absolute path
-" then make it one
-if match(s:currentPath, '^/') < 0
-  let s:currentPath = getcwd() . "/" . s:currentPath
-endif
+function! FindCabalDirectory()
+  if !exists('b:cabalFilePresent')
+    " We start from the path of the file
+    let b:currentCabalPath = expand('%:h')
+    " If current path is not an absolute path
+    " then make it one
+    if match(b:currentCabalPath, '^/') < 0
+      let b:currentCabalPath = getcwd() . "/" . b:currentCabalPath
+    endif
 
-" Initializing the variable that checks if a cabal file
-" is present on the current path
-let s:cabalFilePresent = filereadable(glob(s:currentPath . '/*.cabal')) 
+    " Initializing the variable that checks if a cabal file
+    " is present on the current path
+    let b:cabalFilePresent = 
+            \ filereadable(glob(b:currentCabalPath . '/*.cabal')) 
+    " Lookup cabal files in all subdirectories
+    while !b:cabalFilePresent && !empty(b:currentCabalPath)
+      " we go one level up
+      let b:currentCabalPath = 
+            \ substitute(b:currentCabalPath, '\(.*\)/\(.\+\)$', '\1', '')
+      let b:cabalFilePresent = 
+            \ filereadable(glob(b:currentCabalPath . '/*.cabal'))
+    endwhile
+  endif
 
-" Lookup cabal files in all subdirectories
-while !s:cabalFilePresent && !empty(s:currentPath)
-  " we go one level up
-  let s:currentPath = substitute(s:currentPath, '\(.*\)/\(.\+\)$', '\1', '')
-  let s:cabalFilePresent = filereadable(glob(s:currentPath . '/*.cabal'))
-endwhile
+  if exists('b:currentCabalPath')
+    " On this buffer only
+    " Change the current directory where the cabal file is
+    exec "lcd " . b:currentCabalPath
+  endif
+endfunction
 
-if s:cabalFilePresent
+au BufEnter *.hs call FindCabalDirectory()
+
+" We have to call it the first time
+call FindCabalDirectory()
+if b:cabalFilePresent
   " We create a shortcut to run 'cabal configure'
   nnoremap <buffer> <LEADER>c :<C-u>! cabal configure<CR>
 
-  " On this buffer only
-  " Change the current directory where the cabal file is
-  exec "lcd " . s:currentPath
-
   setl makeprg=cabal\ build
-
 else
   " We compile the current file as the Main module
   let s:currentFile = expand('%')
