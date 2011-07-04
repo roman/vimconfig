@@ -16,6 +16,12 @@ if has("gui_macvim")
   set guifont=Monaco:h14
 endif
 
+" If on mac, we want the clipboard to work with vim
+" without any problems
+if has("macunix") 
+  set clipboard=unnamed
+endif
+
 " We don't want to loose features because of compatibility
 set nocompatible
 " We want any kind of characters on the files _always_
