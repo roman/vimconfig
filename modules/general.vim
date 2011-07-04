@@ -72,7 +72,8 @@ set formatoptions=qrnl
 
 " We want elements to be foldable by their syntax
 " this way is more likely to work out of the box
-set foldmethod=syntax
+set foldmethod=manual
+
 " We don't want all folds to be closed all the start
 " let's set a minimum of 2 level opens
 set foldlevel=19
@@ -81,14 +82,14 @@ set foldlevel=19
 " == Helping The old vices & annoying mistakes
 " We don't want anything to do with the mundane way
 " of moving between characters
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+nmap <up> <nop>
+nmap <down> <nop>
+nmap <left> <nop>
+nmap <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 " move on the screen line, no the file line
 nnoremap j gj
 nnoremap k gk
@@ -105,7 +106,7 @@ au FocusLost * :wa
 inoremap jj <ESC>
 
 " We want to have a similar keystroke like D but for yanking
-nmap Y y$
+nnoremap Y y$
 
 " The <LEADER> keyword, is synonym of ,
 let mapleader=','
@@ -114,9 +115,8 @@ let mapleader=','
 set pastetoggle=<F3>
 
 " Handy Shortcuts
-nmap <LEADER>q :<C-u>quit<CR>
-nmap <LEADER>w :<C-u>w<CR>
-nmap <LEADER>n :<C-u>new<CR>
+nnoremap <LEADER>w :<C-u>w<CR>
+nnoremap <LEADER>n :<C-u>new<CR>
 
 " Moving the q: functionality to ;;
 nnoremap ;; q:

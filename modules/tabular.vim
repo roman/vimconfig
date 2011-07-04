@@ -1,3 +1,4 @@
+" TODO: change shortcuts to something simpler
 nmap ,q= :Tabularize /=<CR>
 vmap ,q= :Tabularize /=<CR>
 

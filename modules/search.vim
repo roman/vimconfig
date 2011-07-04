@@ -10,7 +10,7 @@ set smartcase
 
 " We want substitution of regexp to apply to the whole line
 " by default, not the first case only
-set gdefault
+" set gdefault
 
 " We want to see the next matching pattern as we write
 set incsearch

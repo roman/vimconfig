@@ -45,7 +45,7 @@ endfunction
 " Check trailing spaces 
 function! StatuslineTrailingSpaceWarning()
   if !exists('b:statusline_trailing_space_warning')
-    if search('\s\+$', 'nw') != 0
+    if search(' \+$', 'nw') != 0
       let b:statusline_trailing_space_warning = '[\s]'
     else
       let b:statusline_trailing_space_warning = ''
