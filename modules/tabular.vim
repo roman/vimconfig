@@ -17,4 +17,5 @@ endfunction
 
 " Adding special tabulizations for Haskell source code
 au FileType haskell source ~/.vim/modules/tabular/haskell.vim
+au FileType ruby source ~/.vim/modules/tabular/ruby.vim
 

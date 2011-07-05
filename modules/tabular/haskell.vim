@@ -1,5 +1,5 @@
-nmap <Leader>; Tabularize /::<CR>
-nmap <Leader>- Tabularize /<-<CR>
+nmap <buffer><Leader>; Tabularize /::<CR>
+nmap <buffer><Leader>- Tabularize /<-<CR>
 
 inoremap <silent>:: <Esc>:call <SID>hsAlignSignature()<CR>a
 inoremap <silent><- <Esc>:call <SID>hsAlignBinds()<CR>a
