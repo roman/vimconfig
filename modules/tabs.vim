@@ -60,8 +60,8 @@ endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 " === Indentation using TextMate like commands
-vmap <C-[> <gv
-vmap <C-]> >gv
+" vmap <C-[> <gv
+" vmap <C-]> >gv
 
 " ==
 " == Invisible keys customization
