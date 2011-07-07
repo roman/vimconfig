@@ -120,9 +120,8 @@ let mapleader=','
 " Avoid crazy indentation when pasting on terminal
 set pastetoggle=<F3>
 
-" Handy Shortcuts
-nnoremap <LEADER>w :<C-u>w<CR>
-nnoremap <LEADER>n :<C-u>new<CR>
+" Add new buffer
+nnoremap <LEADER>a :<C-u>new<CR>
 
 " Moving the q: functionality to ;;
 nnoremap ;; q:
