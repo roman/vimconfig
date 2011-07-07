@@ -99,6 +99,15 @@ set statusline+=%m
 " of the statusline
 set statusline+=%#error#
 set statusline+=%{HighlightMixedIndenting()}
+
+" If we are using the syntastic plugin, please show me
+" syntax errors on the status line
+if exists("*StatuslineCurrentHighlight") 
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+endif
+
 " show me if there is trailing spaces before the eol
 " set statusline+=%{StatuslineTrailingSpaceWarning()}
 " we set the style of the statusline to the default again
