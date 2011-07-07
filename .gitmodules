@@ -91,3 +91,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-localrc"]
+	path = bundle/vim-localrc
+	url = http://github.com/thinca/vim-localrc.git

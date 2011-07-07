@@ -39,12 +39,10 @@ source ~/.vim/modules/yankring.vim
 source ~/.vim/modules/quickrun.vim
 " == QuickFix module
 source ~/.vim/modules/quickfix.vim
+" == Syntastic module
+source ~/.vim/modules/syntastic.vim
 " == TPP module
 source ~/.vim/modules/tpp.vim
-
-" NOTE: LAST MODULE, PLEASE DON'T REMOVE
-" == Project Config module
-source ~/.vim/modules/project_config.vim
 
 " If vim is starting without an input file, start
 " with VimShell
