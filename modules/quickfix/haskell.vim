@@ -33,7 +33,7 @@ function! FindCabalDirectory()
   endif
 endfunction
 
-au BufEnter *.hs call FindCabalDirectory()
+au BufEnter *.hs,*.cabal call FindCabalDirectory()
 
 " We have to call it the first time
 call FindCabalDirectory()

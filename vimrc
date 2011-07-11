@@ -35,10 +35,10 @@ source ~/.vim/modules/rainbowparentheses.vim
 source ~/.vim/modules/nerdtree.vim
 " == Yankring module
 source ~/.vim/modules/yankring.vim
-" == QuickRun module
-source ~/.vim/modules/quickrun.vim
 " == QuickFix module
 source ~/.vim/modules/quickfix.vim
+" == QuickRun module
+source ~/.vim/modules/quickrun.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
 " == TPP module
