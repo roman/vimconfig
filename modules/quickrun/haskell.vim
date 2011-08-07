@@ -1,26 +1,29 @@
-" NOTE: b:cabalFilePresent is defined by QuickFix, so you need
-" to load that module first on vimrc.
+" If the current directory has a testsuite cabal
+" then run the testsuite
 "
-" We are going to remap <LEADER>r to run the haskell/test
-" type on QuickRun
-if exists('b:cabalFilePresent') && b:cabalFilePresent &&
-      \ filereadable(glob(b:currentCabalPath . '/*-testsuite.cabal'))
+" NOTE: This code depends on the cabalFilePresent variable
+" defined on the quickfix/haskell.vim module
 
-  if match(expand('%'), '^suite/\(.\+\)/Test\(.\+\)\?$') >= 0
-    let s:currentFile =
-          \ substitute(expand('%'), '^suite/\(.\+\)/Test\(.\+\)\?$', '\1', '')
-    let s:runCommand =
-          \ 'dist/build/testsuite/testsuite --plain -t ' . s:currentFile
+if exists('b:cabalFilePresent')
+
+  " If the current cabal path is with testsuite
+  " then configure the quickrun with cabal
+  if filereadable(glob(b:currentCabalPath . '/*-testsuite.cabal'))
+
+    let s:executablePath = './dist/build/testsuite/testsuite --plain -j 4'
+    
+    let g:quickrun_config['haskell/test'] = {
+          \ 'exec': [s:executablePath]
+          \ }
+
+    nmap <LEADER>r :QuickRun haskell/test -mode n -into 1<CR>
+
+  " Otherwise we restore the previous behaviour
+  " for quickrun
   else
-    let s:runCommand = 'dist/build/testsuite/testsuite --plain'
+
+    nmap <LEADER>r <Plug>(quickrun)
   endif
 
-  " We define a quickrun for testsuite
-  let g:quickrun_config['haskell/test'] = {
-        \ 'exec': [s:runCommand]
-        \ }
-
-  " Run the haskell/test mode, and put the cursor into the buffer
-  nnoremap <buffer><LEADER>r :QuickRun haskell/test -mode n -into 1<CR>
-
 endif
+

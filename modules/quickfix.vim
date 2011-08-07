@@ -3,24 +3,26 @@ nmap <LEADER>b :<C-u>make<CR>
 au FileType qf nnoremap <silent><buffer> q :<C-u>cclose<CR>
 au QuickFixCmdPost make call OpenQuickFixBuffer()
 
+" NOTE: Refactor this to uses signs instead
 " Depends on MarkLines in order to work
 " see:
 "  * modules/marklines.vim
 "  * :help marklines
-function! HighlightQuickFixLines(qflist)
-  if exists('g:marklines_loaded') && !empty(a:qflist)
-    let l:curPos = getpos('.')
-    " We save the cursor position
-    for qferror in a:qflist
-      exec qferror.lnum . 'MarkLinesOn'
-    endfor
-    " we keep the cursor in the same place
-    call setpos('.', l:curPos)
-  endif
-endfunction
+"function! HighlightQuickFixLines(qflist)
+"  if exists('g:marklines_loaded') && !empty(a:qflist)
+"    let l:curPos = getpos('.')
+"    " We save the cursor position
+"    for qferror in a:qflist
+"      exec qferror.lnum . 'MarkLinesOn'
+"    endfor
+"    " we keep the cursor in the same place
+"    call setpos('.', l:curPos)
+"  endif
+"endfunction
 
 function! OpenQuickFixBuffer()
-  %MarkLinesOff
+  " #NOTE: Remove all signs
+  "%MarkLinesOff
   let l:qflist = getqflist()
   if !empty(l:qflist)
     call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
