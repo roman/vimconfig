@@ -25,6 +25,8 @@ source ~/.vim/modules/vimshell.vim
 source ~/.vim/modules/neocomplcache.vim
 " == Haskell module
 source ~/.vim/modules/haskell.vim
+" == Clojure module
+source ~/.vim/modules/clojure.vim
 " == Ref-Hoogle module
 source ~/.vim/modules/hoogle.vim
 " == Unite module
