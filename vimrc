@@ -43,8 +43,6 @@ source ~/.vim/modules/quickfix.vim
 source ~/.vim/modules/quickrun.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
-" == TPP module
-source ~/.vim/modules/tpp.vim
 
 " If vim is starting without an input file, start
 " with VimShell
