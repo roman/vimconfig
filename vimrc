@@ -46,10 +46,9 @@ source ~/.vim/modules/syntastic.vim
 
 " If vim is starting without an input file, start
 " with VimShell
-function! InitVimCallback()
-  if empty(bufname('%'))
-    NERDTree 
-  endif
-endfunction
-
-autocmd VimEnter * call InitVimCallback()
+"function! InitVimCallback()
+"  if empty(bufname('%'))
+"    NERDTree 
+"  endif
+"endfunction
+"autocmd VimEnter * call InitVimCallback()
