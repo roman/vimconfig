@@ -27,7 +27,7 @@ function! OpenQuickFixBuffer()
   if !empty(l:qflist)
     call RemoveFromStatusLine('%#error#\[Make failed\]%\*')
     call AppendToStatusLine('%#error#\[Compile Error\]%\*')
-    call HighlightQuickFixLines(l:qflist)
+    " call HighlightQuickFixLines(l:qflist)
     copen
 
   elseif v:shell_error > 0
