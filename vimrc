@@ -15,8 +15,6 @@ source ~/.vim/modules/search.vim
 source ~/.vim/modules/window.vim
 " == Tabs Management module
 source ~/.vim/modules/tabs.vim
-" == Mark Lines module
-source ~/.vim/modules/marklines.vim
 " == Tabular module
 source ~/.vim/modules/tabular.vim
 " == Vimshell module
@@ -41,14 +39,8 @@ source ~/.vim/modules/yankring.vim
 source ~/.vim/modules/quickfix.vim
 " == QuickRun module
 source ~/.vim/modules/quickrun.vim
+" == Lusty module
+source ~/.vim/modules/lusty.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
 
-" If vim is starting without an input file, start
-" with VimShell
-"function! InitVimCallback()
-"  if empty(bufname('%'))
-"    NERDTree 
-"  endif
-"endfunction
-"autocmd VimEnter * call InitVimCallback()
