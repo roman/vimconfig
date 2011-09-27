@@ -44,3 +44,6 @@ source ~/.vim/modules/lusty.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
 
+" Show WarningMsg as errors
+hi! link Error WarningMsg
+
