@@ -54,7 +54,7 @@
 	url = http://github.com/ujihisa/neco-ghc.git
 [submodule "bundle/quickrun"]
 	path = bundle/quickrun
-	url = http://github.com/thinca/vim-quickrun.git
+	url = http://github.com/ujihisa/vim-quickrun.git
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = http://github.com/bdd/vim-scala.git
