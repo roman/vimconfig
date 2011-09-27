@@ -48,7 +48,7 @@
 	url = http://github.com/Shougo/vimproc
 [submodule "bundle/unite"]
 	path = bundle/unite
-	url = http://github.com/ujihisa/unite.vim.git
+	url = http://github.com/Shougo/unite.vim.git
 [submodule "bundle/neocomplcache-ghc"]
 	path = bundle/neocomplcache-ghc
 	url = http://github.com/ujihisa/neco-ghc.git
