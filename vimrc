@@ -27,8 +27,8 @@ source ~/.vim/modules/haskell.vim
 source ~/.vim/modules/clojure.vim
 " == Ref-Hoogle module
 source ~/.vim/modules/hoogle.vim
-" == Unite module
-source ~/.vim/modules/unite.vim
+" == Ctrlp module
+source ~/.vim/modules/ctrlp.vim
 " == Rainbow Parentheses module
 source ~/.vim/modules/rainbowparentheses.vim
 " == Nerd Tree module
