@@ -9,12 +9,19 @@ let g:ctrlp_working_path_mode = 2
 " Open buffer on vertical split
 let g:ctrlp_split_window = 0
 
-" We are going to jumb to the oppened buffer
-let g:ctrl_jump_to_buffer = 1
+" Use caching for the love of god
+let g:ctrlp_use_caching = 1
+
+" Leave the cache
+let g:ctrlp_clear_cache_on_exit = 0
 
 " The cache of this plugin is going in the tmp folder of
 " .vim
-let g:ctrlp_cache_dir = $HOME . "/.vim/tmp/ctrlp"
+let g:ctrlp_cache_dir = $HOME . "/.vim/tmp"
+
+" We are going to jumb to the oppened buffer
+let g:ctrl_jump_to_buffer = 1
+
 
 set wildignore=*/.git/*,*/.hg/*,*/dist/*,*/cabal-dev/*
 
