@@ -71,10 +71,10 @@ set textwidth=79
 " A bunch of settings all wrapped up together
 " :help formatoptions for more info
 set formatoptions=qrnl
-" We want the line to be colored after passing 85
+" We want the line to be colored after passing 79
 " chars, this way we know we are breaking formatting
 " rules
-"set colorcolumn=85
+set colorcolumn=+1
 
 " We want elements to be foldable by their syntax
 " this way is more likely to work out of the box
@@ -127,5 +127,3 @@ nnoremap <LEADER>a :<C-u>new<CR>
 nnoremap ;; q:
 nmap q: <nop>
 
-" Highlight long lines 
-match ErrorMsg '\%80v.\+'

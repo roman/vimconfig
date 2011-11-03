@@ -17,6 +17,17 @@ set incsearch
 set showmatch
 set hlsearch
 
+" Ack for the last search.
+nnoremap <silent> <leader>? :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>
+"
+" Open a Quickfix window for the last search.
+nnoremap <silent> <leader>/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
+
+" Make the search always centered, and also open sufficient folds
+" when going to a match
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
 nnoremap <silent> <LEADER><SPACE> :noh<CR>
 nnoremap <TAB> %
 vnoremap <TAB> %

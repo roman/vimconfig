@@ -66,7 +66,8 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 " ==
 " == Invisible keys customization
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set showbreak=↪
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 

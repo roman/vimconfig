@@ -1,3 +1,4 @@
+
 " == Initial Setup (Pathogen)
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -11,6 +12,10 @@ source ~/.vim/modules/general.vim
 source ~/.vim/modules/statusline.vim
 " == Search module
 source ~/.vim/modules/search.vim
+" == Backup module settings
+source ~/.vim/modules/backup.vim
+" == Highlights and Matching module
+source ~/.vim/modules/highlights.vim
 " == Window Management module
 source ~/.vim/modules/window.vim
 " == Tabs Management module
@@ -44,6 +49,4 @@ source ~/.vim/modules/lusty.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
 
-" Show WarningMsg as errors
-hi! link Error WarningMsg
 
