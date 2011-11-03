@@ -127,3 +127,6 @@ nnoremap <LEADER>a :<C-u>new<CR>
 nnoremap ;; q:
 nmap q: <nop>
 
+" After auto-indent, if I press ESC please don't
+" remove the auto-indent 
+imap <CR> <CR> <BS>
