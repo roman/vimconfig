@@ -18,24 +18,24 @@ endif
 
 " If on mac, we want the clipboard to work with vim
 " without any problems
-if has("macunix") 
+if has("macunix")
   set clipboard=unnamed
 endif
 
 " We don't want to loose features because of compatibility
 set nocompatible
 " We want any kind of characters on the files _always_
-set encoding=utf-8   
+set encoding=utf-8
 " We want to see the line numbers
 set nu
-" We want to have smart indentation on newlines 
+" We want to have smart indentation on newlines
 set autoindent
 " We want to know in which state we are (visual, replace, command)
 set showmode
 " We want to see the command we are executing
 set showcmd
 " allow vim to create hidden files without to much hassle
-set hidden 
+set hidden
 " We want to get suggestions out of the prompt, so we enable this
 set wildmenu
 set wildmode=list:longest
@@ -51,18 +51,16 @@ set ruler
 " Allow backspace over autoindent, linebreaks and over the start of insert
 set backspace=indent,eol,start
 
-
-
 " We want to see the relative numbers from the current line
 " NOTE: For some reason this option doesn't work on linux
 "set relativenumber
 
-" We want to have an undofile where we have all the undos 
+" We want to have an undofile where we have all the undos
 " stored, even after we close the file
 " NOTE: For some reason this option doesn't work on linux
 "set undofile
 
-" == 
+" ==
 " == Long line handling
 " We want long lines to be wrapped
 set wrap
@@ -71,10 +69,6 @@ set textwidth=79
 " A bunch of settings all wrapped up together
 " :help formatoptions for more info
 set formatoptions=qrnl
-" We want the line to be colored after passing 79
-" chars, this way we know we are breaking formatting
-" rules
-set colorcolumn=+1
 
 " We want elements to be foldable by their syntax
 " this way is more likely to work out of the box
@@ -128,5 +122,9 @@ nnoremap ;; q:
 nmap q: <nop>
 
 " After auto-indent, if I press ESC please don't
-" remove the auto-indent 
+" remove the auto-indent
 imap <CR> <CR> <BS>
+
+" Show hidden characters by default
+set list!
+
