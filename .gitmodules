@@ -85,9 +85,6 @@
 [submodule "bundle/textobj-user"]
 	path = bundle/textobj-user
 	url = http://github.com/kana/vim-textobj-user.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = http://github.com/scrooloose/syntastic.git
 [submodule "bundle/vim-localrc"]
 	path = bundle/vim-localrc
 	url = http://github.com/thinca/vim-localrc.git
