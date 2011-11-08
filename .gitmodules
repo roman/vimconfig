@@ -88,9 +88,6 @@
 [submodule "bundle/vim-localrc"]
 	path = bundle/vim-localrc
 	url = http://github.com/thinca/vim-localrc.git
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = http://github.com/sjbach/lusty.git
 [submodule "bundle/golden-ratio"]
 	path = bundle/golden-ratio
 	url = http://github.com/roman/golden-ratio
