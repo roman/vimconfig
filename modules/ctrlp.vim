@@ -23,7 +23,7 @@ let g:ctrlp_cache_dir = $HOME . "/.vim/tmp"
 let g:ctrl_jump_to_buffer = 1
 
 
-set wildignore=*/.git/*,*/.hg/*,*/dist/*,*/cabal-dev/*
+set wildignore=*/.hg/*,*/dist/*,*/cabal-dev/*
 
 nnoremap <C-f> :<C-u>CtrlP<CR>
 nnoremap <C-b> :<C-u>CtrlPBuffer<CR>
