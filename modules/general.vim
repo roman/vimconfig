@@ -66,6 +66,9 @@ set backspace=indent,eol,start
 set wrap
 " We want them to be wrapped at the 80th char
 set textwidth=79
+" We want a margin line on the right
+set colorcolumn=+1
+
 " A bunch of settings all wrapped up together
 " :help formatoptions for more info
 set formatoptions=qrnl
