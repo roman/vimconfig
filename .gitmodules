@@ -58,9 +58,6 @@
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = http://github.com/bdd/vim-scala.git
-[submodule "bundle/repl"]
-	path = bundle/repl
-	url = http://github.com/ujihisa/repl.vim.git
 [submodule "bundle/vim-ref"]
 	path = bundle/vim-ref
 	url = http://github.com/thinca/vim-ref.git
@@ -78,7 +75,7 @@
 	url = http://github.com/johnbintz/vim-puppet.git
 [submodule "bundle/clojure"]
 	path = bundle/clojure
-	url = http://github.com/roman/VimClojure.git
+	url = http://github.com/vim-scripts/VimClojure.git
 [submodule "bundle/textobj-indent"]
 	path = bundle/textobj-indent
 	url = http://github.com/kana/vim-textobj-indent.git
