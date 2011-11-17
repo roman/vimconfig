@@ -113,6 +113,8 @@ nnoremap Y y$
 
 " The <LEADER> keyword, is synonym of ,
 let mapleader=','
+let maplocalleader = ';'
+
 
 " Avoid crazy indentation when pasting on terminal
 set pastetoggle=<F3>
