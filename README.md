@@ -6,6 +6,14 @@ manage the different plugins that are installed and being used.
 To get started, after downloading just run the `vimconfig/setup` shellscript
 that will download all the extensions needed.
 
+### Install
+
+```bash
+$ git clone http://github.com/roman/vimconfig $HOME/.vim
+$ cd $HOME/.vim 
+$ ./setup
+```
+
 ## Folder Structure
 
 * `autoload/`
