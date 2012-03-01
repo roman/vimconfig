@@ -8,32 +8,32 @@ that will download all the extensions needed.
 
 ## Folder Structure
 
-1. `autoload/
+1. `autoload/`
 
-This folder will contain only the pathogen extension, that will allow to 
-manage the vim plugins without to much hassle
+  This folder will contain only the pathogen extension, that will allow to
+  manage the vim plugins without to much hassle
 
 2. `bundle/`
 
-All the plugins are installed here as git submodules, in order to make the
-plugins work after clone, you _should_ run the `vimconfig/setup` shellscript.
+  All the plugins are installed here as git submodules, in order to make the
+  plugins work after clone, you _should_ run the `vimconfig/setup` shellscript.
 
 
 3. `colors/`
 
-This folder will hold all the different colorschemes I've found so far over 
-the webz the default one for terminal is wombat256, and the one for gvim is 
-wombat.
+  This folder will hold all the different colorschemes I've found so far over
+  the webz the default one for terminal is wombat256, and the one for gvim is
+  wombat.
 
 4. `modules/`
 
-This folder will contain all the basic setup of the plugins, organized by a 
-different file for each of the plugins that is being configured, there is also 
-some files that configure the basics of vim.
+  This folder will contain all the basic setup of the plugins, organized by a
+  different file for each of the plugins that is being configured, there is also
+  some files that configure the basics of vim.
 
 5. `tmp/`
 
-A folder that will hold temporal metadata for the installed plugins
+  A folder that will hold temporal metadata for the installed plugins
 
 ## Installed Plugins
 
@@ -42,7 +42,7 @@ A folder that will hold temporal metadata for the installed plugins
 Allows you to interact easily with the 'yank register' (aka yy, or y related
 commands).
 
-:help yankring-tutorial
+`:help yankring-tutorial`
 
 Handy shortcuts from Yankring:
 
@@ -54,15 +54,15 @@ Special for Lisp, Clojure coding, or overnested parenthesis. To get started
 use the '\r' command and you will get rainbow parenthesis, use '\r' again to
 reset to normal.
 
-:help rainbow
+`:help rainbow`
 
 Handy shortcuts for Rainbow:
 
 * `\r` -> does a :ToggleRainbowParenthesis
 
-### PowerLine 
+### PowerLine
 
-Powerline is a utility plugin which allows you to create better-looking, more 
+Powerline is a utility plugin which allows you to create better-looking, more
 functional vim statuslines.
 
 :help powerline
@@ -73,9 +73,9 @@ This plugin is a front for the Perl module App::Ack.  Ack can be used as a
 replacement for grep.  This plugin will allow you to run ack from vim, and
 shows the results in a split window.
 
-:help ack
+`:help ack`
 
-Handy shortcuts
+Handy shortcuts:
 
 * `,?` -> does an :Ack search using the word bellow the cursor
 
@@ -83,9 +83,9 @@ Handy shortcuts
 
 Full path fuzzy file, buffer, mru and tag finder with an intuitive interface.
 
-:help ctrlp
+`:help ctrlp`
 
-Handy shortcuts
+Handy shortcuts:
 
 * `ctrl-b` -> lists active buffers you are editing on
 * `ctrl-f` -> looks up files by name in the current directory
@@ -96,14 +96,14 @@ Awesome plugin that integrates tightly Git repos with vim, to get started
 quickly I suggest watching the amazing series of vimcasts about this incredible
 tool: http://vimcasts.org/blog/2011/05/the-fugitive-series/
 
-:help fugitive
+`:help` fugitive
 
 ### golden-ratio
 
-Plugin that will increase the size of the window you are focusing on, and 
+Plugin that will increase the size of the window you are focusing on, and
 decreasing the size of the ignored windows using the golden ratio metrics.
 
-:help golden-ratio
+`:help` golden-ratio
 
 ### hexHighlight
 
@@ -113,6 +113,8 @@ Plugin that will put colors on HEX colos numbers, _only works on gvim/macvim_.
 
 Enhnanced matching of %
 
+`:help matchit`
+
 ### NERDTree
 
 The NERD tree allows you to explore your filesystem and to open files and
@@ -120,9 +122,9 @@ directories. It presents the filesystem to you in the form of a tree which you
 manipulate with the keyboard and/or mouse. It also allows you to perform
 simple filesystem operations.
 
-:help NERDTree
+`:help NERDTree`
 
-Handy shortcuts
+Handy shortcuts:
 
 * `\p` -> Opens up the NERDTree on the left side of the screen
 
