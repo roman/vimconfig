@@ -5,3 +5,16 @@ git submodule update --init
 mkdir -p tmp/backup
 mkdir -p tmp/swap
 mkdir -p tmp/undo
+
+# Setting up vimproc
+
+cd $HOME/.vim/bundle/vimproc/
+platform=`uname -s`
+
+if [ $platform = "Darwin" ]
+then
+  make -f $HOME/.vim/bundle/vimproc/make_mac.mak
+elif [ $platform = "Linux" ]
+then
+  make -f $HOME/.vim/bundle/vimproc/make_gcc.mak
+fi
