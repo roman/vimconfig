@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd $HOME/.vim
+git submodule update --init
+mkdir -p tmp/backup
+mkdir -p tmp/swap
+mkdir -p tmp/undo
