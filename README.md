@@ -8,30 +8,30 @@ that will download all the extensions needed.
 
 ## Folder Structure
 
-1. `autoload/`
+* `autoload/`
 
   This folder will contain only the pathogen extension, that will allow to
   manage the vim plugins without to much hassle
 
-2. `bundle/`
+* `bundle/`
 
   All the plugins are installed here as git submodules, in order to make the
   plugins work after clone, you _should_ run the `vimconfig/setup` shellscript.
 
 
-3. `colors/`
+* `colors/`
 
   This folder will hold all the different colorschemes I've found so far over
   the webz the default one for terminal is wombat256, and the one for gvim is
   wombat.
 
-4. `modules/`
+* `modules/`
 
   This folder will contain all the basic setup of the plugins, organized by a
   different file for each of the plugins that is being configured, there is also
   some files that configure the basics of vim.
 
-5. `tmp/`
+* `tmp/`
 
   A folder that will hold temporal metadata for the installed plugins
 
@@ -65,7 +65,7 @@ Handy shortcuts for Rainbow:
 Powerline is a utility plugin which allows you to create better-looking, more
 functional vim statuslines.
 
-:help powerline
+`:help powerline`
 
 ### Ack
 
@@ -96,14 +96,14 @@ Awesome plugin that integrates tightly Git repos with vim, to get started
 quickly I suggest watching the amazing series of vimcasts about this incredible
 tool: http://vimcasts.org/blog/2011/05/the-fugitive-series/
 
-`:help` fugitive
+`:help fugitive`
 
 ### golden-ratio
 
 Plugin that will increase the size of the window you are focusing on, and
 decreasing the size of the ignored windows using the golden ratio metrics.
 
-`:help` golden-ratio
+`:help golden-ratio`
 
 ### hexHighlight
 
