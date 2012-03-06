@@ -46,6 +46,8 @@ source ~/.vim/modules/quickrun.vim
 source ~/.vim/modules/lusty.vim
 " == Syntastic module
 source ~/.vim/modules/syntastic.vim
+" == Powerline module
+source ~/.vim/modules/powerline.vim
 " == Slimv module
 source ~/.vim/modules/slimv.vim
 
