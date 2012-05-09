@@ -73,9 +73,6 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = http://github.com/johnbintz/vim-puppet.git
-[submodule "bundle/clojure"]
-	path = bundle/clojure
-	url = http://github.com/vim-scripts/VimClojure.git
 [submodule "bundle/textobj-indent"]
 	path = bundle/textobj-indent
 	url = http://github.com/kana/vim-textobj-indent.git
