@@ -96,4 +96,4 @@
 	url = https://github.com/vim-scripts/slimv.vim.git
 [submodule "bundle/yankring"]
 	path = bundle/yankring
-	url = http://github.com/vim-scripts/YankRing.vim.git
+	url = https://github.com/vim-scripts/YankRing.vim.git
