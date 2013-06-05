@@ -94,3 +94,6 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/tracker"]
+	path = bundle/tracker
+	url = https://github.com/BirdseyeSoftware/tracker.vim
