@@ -16,5 +16,5 @@ then
   make -f $HOME/.vim/bundle/vimproc/make_mac.mak
 elif [ $platform = "Linux" ]
 then
-  make -f $HOME/.vim/bundle/vimproc/make_gcc.mak
+  make -f $HOME/.vim/bundle/vimproc/make_unix.mak
 fi
