@@ -30,7 +30,7 @@
 	url = http://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = http://github.com/tsaleh/vim-matchit.git
+	url = https://github.com/eshock/vim-matchit.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = http://github.com/godlygeek/tabular.git
