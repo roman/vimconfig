@@ -85,14 +85,14 @@ set foldlevel=19
 " == Helping The old vices & annoying mistakes
 " We don't want anything to do with the mundane way
 " of moving between characters
-nmap <up> <nop>
-nmap <down> <nop>
-nmap <left> <nop>
-nmap <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+"nmap <up> <nop>
+"nmap <down> <nop>
+"nmap <left> <nop>
+"nmap <right> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
 " move on the screen line, no the file line
 nnoremap j gj
 nnoremap k gk
